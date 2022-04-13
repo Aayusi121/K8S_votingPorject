@@ -1,0 +1,16 @@
+---
+apiVersion: V1
+kind: Service
+metadat:
+  name: redis-service
+  labels:
+    name: redis-service
+    authore: aayusi
+spec:
+  ports:
+    - port: 6379
+      targetPort: 6379
+  selector:
+    name: redis-pod
+    authore: aayusi
+...

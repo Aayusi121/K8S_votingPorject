@@ -1,0 +1,17 @@
+---
+apiVersion: V1
+kind: service
+metadata:
+  name: result-app-service
+  labels:
+    name: result-app-servive
+    author: aayusi
+spec:
+  type: LoadBalancer
+  ports:
+    - targetPort: 80
+      Port: 80
+  selctor:
+    name: pod
+    author: aayusi
+...

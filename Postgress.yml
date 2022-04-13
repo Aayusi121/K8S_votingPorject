@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgress-pod
+  lables:
+    name: postgress-pod
+    author: aayusi
+spec:
+  containers:
+    - name: postgress
+      image: postgress
+      env:
+        - name: POSTGRESS_PASSWORD
+          value: aayusi
+        - name: POSTGRESS_DB
+          value: mydb
+        - name: POSTGRESS_USER
+          value: myuser
+...
+

@@ -1,0 +1,14 @@
+---
+apiVersion: V1
+kind: pod
+metadata:
+  name: result-app-pod
+  labels:
+    name: pod
+    author: aayusi
+spec:
+  containers:
+    - name: result-app
+      image: dockersamples/examplevotingapp_result
+      ports:
+        - containerPort: 80

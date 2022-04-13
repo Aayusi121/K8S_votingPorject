@@ -1,0 +1,16 @@
+---
+apiVersion: V1
+kind: Service
+metadata:
+  name: postgress-service
+  labels:
+    name: postgress-service
+    authore: aayusi
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+  selector:
+    name: postgress-pod
+    author: aayusi
+...

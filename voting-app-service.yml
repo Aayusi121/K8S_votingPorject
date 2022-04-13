@@ -1,0 +1,16 @@
+---
+apiVersion: V1
+kind: service
+metadata:
+  name: voting-app-service
+  labels:
+    name: voting-app-service
+    author: aayusi
+spec:
+  ports:
+    - targetPort: 80
+      Port: 80
+  selector:
+    name: voting-app-pod
+    author: aayusi
+...
